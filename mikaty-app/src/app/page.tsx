@@ -13,8 +13,8 @@ import {
 const features = [
   {
     icon: BarChart3,
-    title: "Smart Dashboard",
-    description: "Get a complete overview of your finances at a glance with real-time charts and insights.",
+    title: "Smart Analytics",
+    description: "Get insights into your spending patterns with real-time charts and reports.",
   },
   {
     icon: Receipt,

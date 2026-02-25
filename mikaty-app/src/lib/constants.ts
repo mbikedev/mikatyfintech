@@ -1,12 +1,11 @@
 import {
-  LayoutDashboard, ArrowLeftRight, Receipt, PiggyBank, Target, Settings,
+  ArrowLeftRight, Receipt, PiggyBank, Target, Settings,
 } from "lucide-react";
 
 export const APP_NAME = "Mikaty";
 export const APP_DESCRIPTION = "All-in-one Finance App for Your Money";
 
 export const NAV_ITEMS = [
-  { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
   { label: "Transactions", href: "/transactions", icon: ArrowLeftRight },
   { label: "Expenses", href: "/expenses", icon: Receipt },
   { label: "Budgets", href: "/budgets", icon: PiggyBank },

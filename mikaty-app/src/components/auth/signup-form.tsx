@@ -54,7 +54,7 @@ export function SignupForm() {
       if (result?.error) {
         setError("Something went wrong. Please try again.");
       } else {
-        router.push("/dashboard");
+        router.push("/transactions");
         router.refresh();
       }
     } catch {
