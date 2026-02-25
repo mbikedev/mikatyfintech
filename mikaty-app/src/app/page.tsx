@@ -1,10 +1,18 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { useLanguage } from "@/components/providers/language-provider";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+} from "@/components/ui/sheet";
+import { Separator } from "@/components/ui/separator";
 import {
   BarChart3,
   PiggyBank,
@@ -13,6 +21,7 @@ import {
   Shield,
   Zap,
   ArrowRight,
+  Menu,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -27,6 +36,7 @@ const navLinks = [
 
 export default function LandingPage() {
   const { t } = useLanguage();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
@@ -53,17 +63,67 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <LanguageSwitcher />
-            <ThemeToggle />
-            <Link href="/login">
+            <div className="hidden sm:flex items-center gap-2">
+              <LanguageSwitcher />
+              <ThemeToggle />
+            </div>
+            <Link href="/login" className="hidden sm:inline-flex">
               <Button variant="ghost" size="sm">{t.nav.signIn}</Button>
             </Link>
-            <Link href="/signup">
+            <Link href="/signup" className="hidden sm:inline-flex">
               <Button size="sm">{t.nav.getStarted}</Button>
             </Link>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden"
+              onClick={() => setMobileMenuOpen(true)}
+            >
+              <Menu className="h-5 w-5" />
+            </Button>
           </div>
         </div>
       </nav>
+
+      {/* Mobile Menu */}
+      <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+        <SheetContent side="right" className="w-72 p-0">
+          <SheetHeader className="px-4 py-4">
+            <SheetTitle className="flex items-center gap-2">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-sm">
+                M
+              </div>
+              <span className="text-lg font-bold">Mikaty</span>
+            </SheetTitle>
+          </SheetHeader>
+          <Separator />
+          <nav className="space-y-1 px-3 py-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.key}
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
+              >
+                {t.nav[link.key]}
+              </Link>
+            ))}
+          </nav>
+          <Separator />
+          <div className="px-3 py-4 space-y-3">
+            <div className="flex items-center gap-2 px-3">
+              <LanguageSwitcher />
+              <ThemeToggle />
+            </div>
+            <Link href="/login" onClick={() => setMobileMenuOpen(false)}>
+              <Button variant="outline" className="w-full">{t.nav.signIn}</Button>
+            </Link>
+            <Link href="/signup" onClick={() => setMobileMenuOpen(false)}>
+              <Button className="w-full">{t.nav.getStarted}</Button>
+            </Link>
+          </div>
+        </SheetContent>
+      </Sheet>
 
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
