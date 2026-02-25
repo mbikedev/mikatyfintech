@@ -1,0 +1,6 @@
+{
+  "framework": "nextjs",
+  "installCommand": "cd mikaty-app && npm install",
+  "buildCommand": "cd mikaty-app && npm run build",
+  "outputDirectory": "mikaty-app/.next"
+}
