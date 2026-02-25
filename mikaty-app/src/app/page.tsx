@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 import {
   BarChart3,
   PiggyBank,
@@ -56,6 +57,7 @@ export default function LandingPage() {
             <span className="text-lg font-bold text-foreground">Mikaty</span>
           </div>
           <div className="flex items-center gap-3">
+            <ThemeToggle />
             <Link href="/login">
               <Button variant="ghost" size="sm">Sign in</Button>
             </Link>
