@@ -1,0 +1,12 @@
+{
+  "name": "mikatyfintech",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix mikaty-app",
+    "build": "npm run build --prefix mikaty-app",
+    "start": "npm run start --prefix mikaty-app",
+    "lint": "npm run lint --prefix mikaty-app",
+    "install:app": "cd mikaty-app && npm install"
+  }
+}

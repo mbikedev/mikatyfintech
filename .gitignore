@@ -26,7 +26,9 @@ yarn-debug.log*
 yarn-error.log*
 
 # Claude
-.claude/
+.claude/*
+!.claude/settings.json
+!.claude/hooks/
 
 # TypeScript
 *.tsbuildinfo
