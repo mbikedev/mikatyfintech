@@ -21,7 +21,7 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
       <SheetContent side="left" className="w-72 p-0">
         <SheetHeader className="px-4 py-4">
           <SheetTitle className="flex items-center gap-2">
-            <Image src="/images/logo.png" alt="MikatyFintech" width={32} height={32} className="h-8 w-8 rounded-lg object-contain" />
+            <Image src="/images/mikaty-logo.webp" alt="MikatyFintech" width={32} height={32} className="h-8 w-8 rounded-lg object-contain" />
             <span className="text-lg font-bold">{APP_NAME}</span>
           </SheetTitle>
         </SheetHeader>
