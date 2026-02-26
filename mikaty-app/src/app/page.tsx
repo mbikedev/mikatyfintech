@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
@@ -45,9 +46,7 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-sm">
-                M
-              </div>
+              <Image src="/images/logo.png" alt="Mikaty" width={32} height={32} className="h-8 w-8 rounded-lg object-contain" />
               <span className="text-lg font-bold text-foreground">Mikaty</span>
             </div>
             <div className="hidden md:flex items-center gap-1">
@@ -90,9 +89,7 @@ export default function LandingPage() {
         <SheetContent side="right" className="w-72 p-0">
           <SheetHeader className="px-4 py-4">
             <SheetTitle className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-sm">
-                M
-              </div>
+              <Image src="/images/logo.png" alt="Mikaty" width={32} height={32} className="h-8 w-8 rounded-lg object-contain" />
               <span className="text-lg font-bold">Mikaty</span>
             </SheetTitle>
           </SheetHeader>
@@ -204,9 +201,7 @@ export default function LandingPage() {
       <footer className="border-t border-border py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="flex h-6 w-6 items-center justify-center rounded bg-primary text-primary-foreground font-bold text-xs">
-              M
-            </div>
+            <Image src="/images/logo.png" alt="Mikaty" width={24} height={24} className="h-6 w-6 rounded object-contain" />
             <span className="text-sm text-muted-foreground">{t.footer.tagline}</span>
           </div>
           <p className="text-xs text-muted-foreground">
