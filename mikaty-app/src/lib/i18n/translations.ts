@@ -83,7 +83,7 @@ export const translations = {
       titleStart: "Your all-in-one",
       titleHighlight: "finance companion",
       description:
-        "Track expenses, manage budgets, and achieve your financial goals. MikatyFintechFintech gives you the tools to take control of your money.",
+        "Track expenses, manage budgets, and achieve your financial goals. MikatyFintech gives you the tools to take control of your money.",
       cta: "Get Started Free",
       ctaSecondary: "Sign In",
     },
@@ -127,11 +127,11 @@ export const translations = {
     cta: {
       title: "Start tracking your finances today",
       description:
-        "Join thousands of users who have taken control of their financial future with MikatyFintechFintech.",
+        "Join thousands of users who have taken control of their financial future with MikatyFintech.",
       button: "Create Free Account",
     },
     footer: {
-      tagline: "MikatyFintechFintech - All-in-one Finance App",
+      tagline: "MikatyFintech - All-in-one Finance App",
       builtWith: "Built with Next.js, Tailwind CSS, and shadcn/ui",
     },
   },
