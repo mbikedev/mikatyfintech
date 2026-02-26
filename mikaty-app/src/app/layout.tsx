@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mikaty - Application Financi\u00e8re Tout-en-Un",
-  description: "Suivez vos d\u00e9penses, g\u00e9rez vos budgets et atteignez vos objectifs financiers avec Mikaty.",
+  title: "MikatyFintech - Application Financière Tout-en-Un",
+  description: "Suivez vos dépenses, gérez vos budgets et atteignez vos objectifs financiers avec MikatyFintech.",
 };
 
 export default function RootLayout({

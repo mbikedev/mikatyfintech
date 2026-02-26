@@ -46,8 +46,8 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
-              <Image src="/images/logo.png" alt="Mikaty" width={32} height={32} className="h-8 w-8 rounded-lg object-contain" />
-              <span className="text-lg font-bold text-foreground">Mikaty</span>
+              <Image src="/images/logo.png" alt="MikatyFintech" width={32} height={32} className="h-8 w-8 rounded-lg object-contain" />
+              <span className="text-lg font-bold text-foreground">MikatyFintech</span>
             </div>
             <div className="hidden md:flex items-center gap-1">
               {navLinks.map((link) => (
@@ -89,8 +89,8 @@ export default function LandingPage() {
         <SheetContent side="right" className="w-72 p-0">
           <SheetHeader className="px-4 py-4">
             <SheetTitle className="flex items-center gap-2">
-              <Image src="/images/logo.png" alt="Mikaty" width={32} height={32} className="h-8 w-8 rounded-lg object-contain" />
-              <span className="text-lg font-bold">Mikaty</span>
+              <Image src="/images/logo.png" alt="MikatyFintech" width={32} height={32} className="h-8 w-8 rounded-lg object-contain" />
+              <span className="text-lg font-bold">MikatyFintech</span>
             </SheetTitle>
           </SheetHeader>
           <Separator />
@@ -201,7 +201,7 @@ export default function LandingPage() {
       <footer className="border-t border-border py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <Image src="/images/logo.png" alt="Mikaty" width={24} height={24} className="h-6 w-6 rounded object-contain" />
+            <Image src="/images/logo.png" alt="MikatyFintech" width={24} height={24} className="h-6 w-6 rounded object-contain" />
             <span className="text-sm text-muted-foreground">{t.footer.tagline}</span>
           </div>
           <p className="text-xs text-muted-foreground">

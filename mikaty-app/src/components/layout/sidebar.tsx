@@ -27,7 +27,7 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
       {/* Logo */}
       <div className="flex h-14 items-center px-4">
         <Link href="/transactions" className="flex items-center gap-2">
-          <Image src="/images/logo.png" alt="Mikaty" width={32} height={32} className="h-8 w-8 rounded-lg object-contain" />
+          <Image src="/images/logo.png" alt="MikatyFintech" width={32} height={32} className="h-8 w-8 rounded-lg object-contain" />
           {!collapsed && (
             <span className="text-lg font-bold text-foreground">{APP_NAME}</span>
           )}

@@ -2,7 +2,7 @@ import {
   ArrowLeftRight, Receipt, PiggyBank, Target, Settings,
 } from "lucide-react";
 
-export const APP_NAME = "Mikaty";
+export const APP_NAME = "MikatyFintech";
 export const APP_DESCRIPTION = "All-in-one Finance App for Your Money";
 
 export const NAV_ITEMS = [

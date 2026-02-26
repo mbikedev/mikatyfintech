@@ -17,7 +17,7 @@ export const translations = {
       titleStart: "Votre compagnon",
       titleHighlight: "financier tout-en-un",
       description:
-        "Suivez vos d\u00e9penses, g\u00e9rez vos budgets et atteignez vos objectifs financiers. Mikaty vous donne les outils pour prendre le contr\u00f4le de votre argent.",
+        "Suivez vos d\u00e9penses, g\u00e9rez vos budgets et atteignez vos objectifs financiers. MikatyFintech vous donne les outils pour prendre le contr\u00f4le de votre argent.",
       cta: "Commencer gratuitement",
       ctaSecondary: "Se connecter",
     },
@@ -61,11 +61,11 @@ export const translations = {
     cta: {
       title: "Commencez \u00e0 suivre vos finances d\u00e8s aujourd'hui",
       description:
-        "Rejoignez des milliers d'utilisateurs qui ont pris le contr\u00f4le de leur avenir financier avec Mikaty.",
+        "Rejoignez des milliers d'utilisateurs qui ont pris le contr\u00f4le de leur avenir financier avec MikatyFintech.",
       button: "Cr\u00e9er un compte gratuit",
     },
     footer: {
-      tagline: "Mikaty - Application financi\u00e8re tout-en-un",
+      tagline: "MikatyFintech - Application financi\u00e8re tout-en-un",
       builtWith: "Construit avec Next.js, Tailwind CSS et shadcn/ui",
     },
   },
@@ -83,7 +83,7 @@ export const translations = {
       titleStart: "Your all-in-one",
       titleHighlight: "finance companion",
       description:
-        "Track expenses, manage budgets, and achieve your financial goals. Mikaty gives you the tools to take control of your money.",
+        "Track expenses, manage budgets, and achieve your financial goals. MikatyFintechFintech gives you the tools to take control of your money.",
       cta: "Get Started Free",
       ctaSecondary: "Sign In",
     },
@@ -127,11 +127,11 @@ export const translations = {
     cta: {
       title: "Start tracking your finances today",
       description:
-        "Join thousands of users who have taken control of their financial future with Mikaty.",
+        "Join thousands of users who have taken control of their financial future with MikatyFintechFintech.",
       button: "Create Free Account",
     },
     footer: {
-      tagline: "Mikaty - All-in-one Finance App",
+      tagline: "MikatyFintechFintech - All-in-one Finance App",
       builtWith: "Built with Next.js, Tailwind CSS, and shadcn/ui",
     },
   },
