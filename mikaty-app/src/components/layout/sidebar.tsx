@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { NAV_ITEMS, APP_NAME } from "@/lib/constants";
@@ -25,10 +26,8 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
     >
       {/* Logo */}
       <div className="flex h-14 items-center px-4">
-        <Link href="/dashboard" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-sm">
-            M
-          </div>
+        <Link href="/transactions" className="flex items-center gap-2">
+          <Image src="/images/logo.png" alt="Mikaty" width={32} height={32} className="h-8 w-8 rounded-lg object-contain" />
           {!collapsed && (
             <span className="text-lg font-bold text-foreground">{APP_NAME}</span>
           )}

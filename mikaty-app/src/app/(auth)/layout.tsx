@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { APP_NAME } from "@/lib/constants";
 
 export default function AuthLayout({
@@ -10,9 +11,7 @@ export default function AuthLayout({
       {/* Left side - Branding (hidden on mobile) */}
       <div className="hidden lg:flex lg:w-1/2 flex-col justify-center items-center bg-gradient-to-br from-primary/20 via-background to-background p-12">
         <div className="max-w-md text-center">
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary text-primary-foreground font-bold text-2xl mx-auto mb-6">
-            M
-          </div>
+          <Image src="/images/logo.png" alt="Mikaty" width={64} height={64} className="h-16 w-16 rounded-2xl object-contain mx-auto mb-6" />
           <h1 className="text-3xl font-bold text-foreground mb-4">{APP_NAME}</h1>
           <p className="text-lg text-muted-foreground">
             Your all-in-one finance companion. Track expenses, manage budgets, and achieve your financial goals.
@@ -25,9 +24,7 @@ export default function AuthLayout({
         <div className="w-full max-w-md">
           {/* Mobile logo */}
           <div className="flex items-center gap-2 mb-8 lg:hidden">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground font-bold text-lg">
-              M
-            </div>
+            <Image src="/images/logo.png" alt="Mikaty" width={40} height={40} className="h-10 w-10 rounded-xl object-contain" />
             <span className="text-xl font-bold text-foreground">{APP_NAME}</span>
           </div>
           {children}
